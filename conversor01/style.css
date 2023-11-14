@@ -1,0 +1,149 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("imagens/background.jpg");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+.conversao{
+  width: 120px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+body > img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 250px;
+}
+.box-dolar {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 450px;
+  margin: 20px;
+  border: 3px solid #000;
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.box-dolar:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+.box-bitcoin {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 450px;
+  margin: 20px;
+  border: 3px solid #000;
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.box-bitcoin:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+.box-anosluz {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 450px;
+  margin: 20px;
+  border: 3px solid #000;
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.box-anosluz:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+.button-pulso {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.button-pulso:hover {
+  animation: pulso 0.5s;
+}
+
+.resetar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.resetar:hover {
+  animation: pulso 0.5s;
+}
+
+@keyframes pulso {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="imagens/conversao.png" class="conversao" alt="" />
+    <div class="container">
+      <h1 class="page-title">Conversor feito pela:</h1>
+      <img src="logo-imersao-alura.svg" class="page-logo" alt="" />
+    </div> 
+
+    <div class="boxs">
+      <div class="box-dolar">
+        <h1>Conversão de Dólar</h1>
+        <label for="dolar">U$:</label>
+        <input type="number" id="dolar" step="0.1" />
+        <br />
+        <label for="resultado-dolar">Resultado em R$:</label>
+        <input type="text" id="resultado-dolar" disabled />
+        <br />
+        <button class="button-pulso" onclick="converterMoeda()">
+          Converter
+        </button>
+      </div>
+      <div class="box-bitcoin">
+        <h1>Conversão de Bitcoin</h1>
+        <label for="bitcoin">Bitcoin:</label>
+        <input type="number" id="bitcoin" step="0.001" />
+        <br />
+        <label for="resultado-bitcoin">Resultado em R$:</label>
+        <input type="text" id="resultado-bitcoin" disabled />
+        <br />
+        <button class="button-pulso" onclick="converterBitcoin()">
+          Converter
+        </button>
+      </div>
+      <div class="box-anosluz">
+        <h1>Conversão de Ano-luz</h1>
+        <label for="anoluz">Ano-luz:</label>
+        <input type="number" id="anoluz" step="0.1" />
+        <br />
+        <label for="resultado-anoluz">Resultado em KM:</label>
+        <input type="text" id="resultado-anoluz" disabled />
+        <br />
+        <button class="button-pulso" onclick="converterAnoLuz()">
+          Converter
+        </button>
+      </div>
+    </div>
+    <button class="resetar" onclick="resetValores()">Zerar valores</button>
+    <script src="script.js"></script>
+  </body>
+</html>
