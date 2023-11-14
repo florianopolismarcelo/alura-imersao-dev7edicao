@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto mono", monospace;
+  text-decoration: none;
+}
+
+body {
+  text-align: center;
+  background-image: url("imagens/background.jpg");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+body > img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 250px;
+}
+
+.form-price {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 70%;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.box-price {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1.5rem;
+  min-width: 30vw;
+  gap: 1.1rem;
+  color: #f2e3d5;
+  background-color: rgba(114, 242, 235, 0.3);
+  font-size: 1.1em;
+}
+
+.box-price input {
+  padding: 5px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.box-price input::placeholder {
+  color: #4b4952;
+  font-weight: 600;
+}
+
+.box-price button {
+  border-radius: 8px;
+  border: none;
+  background: rgba(15, 194, 192, 0.5);
+  padding: 2px 0;
+  width: 50%;
+  margin: 0 auto;
+  font-weight: 600;
+}
