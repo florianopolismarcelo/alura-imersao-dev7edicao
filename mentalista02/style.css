@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?q=80&w=1371&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.title-h1{
+    border: 0px solid #171616;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgba(19, 19, 19, 0.679);
+    color: rgb(247, 247, 247);
+}
+
+.input-player{
+    border: 0px solid #171616;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgba(19, 19, 19, 0.679);
+    color: rgb(247, 247, 247);
+}
+
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
