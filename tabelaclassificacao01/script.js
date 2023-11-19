@@ -28,20 +28,29 @@ var Motta = {
 }
 
 var elementoTabela = document.getElementById('tabelaJogadores')
+
+exibirNaTela()
+
+function exibirNaTela() {
 elementoTabela.innerHTML = `
 <tr>
               <td>${marcelo.nome}</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td><button onClick="adicionarVitoria()">Vitória</button></td>
+              <td>${marcelo.vitoria}</td>
+              <td>${marcelo.empate}</td>
+              <td>${marcelo.derrota}</td>
+              <td>${marcelo.pontos}</td>
+              <td><button onClick="adicionarVitoria(marcelo)">Vitória</button></td>
               <td><button onClick="adicionarEmpate()">Empate</button></td>
               <td><button onClick="adicionarDerrota()">Derrota</button></td>
             </tr>
 `
+}
 
-function adicionarVitoria() {}
+function adicionarVitoria(jogador) {
+  jogador.vitoria++;
+  jogador.pontos = jogador.pontos + 3;
+  exibirNaTela()
+}
 function adicionarEmpate() {}
 function adicionarDerrota() {}
 
