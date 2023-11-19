@@ -51,7 +51,13 @@ function adicionarVitoria(jogador) {
   jogador.pontos = jogador.pontos + 3;
   exibirNaTela()
 }
-function adicionarEmpate() {}
-function adicionarDerrota() {}
+function adicionarEmpate(jogador) {
+  jogador.empate++
+  jogador.pontos++
+  //jogador.pontos = jogador.pontos + 1
+  exibirNaTela()
+}
+
+function adicionarDerrota(jogador) {}
 
 
